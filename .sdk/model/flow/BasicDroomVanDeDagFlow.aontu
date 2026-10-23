@@ -1,0 +1,28 @@
+# BasicDroomVanDeDagFlow
+
+main: kit: flow: BasicDroomVanDeDagFlow:
+{
+  entity: "droom_van_de_dag",
+  kind: "basic",
+  name: "BasicDroomVanDeDagFlow",
+  step: [
+    {
+      i: {
+        ref: "droom_van_de_dag_ref01",
+        srcdatavar: "droom_van_de_dag_ref01_data",
+        suffix: "_dt0"
+      }
+
+      o: "load",
+      v: [
+        {
+          apply: "TextFieldMark",
+          def: {
+            mark: "Mark01-droom_van_de_dag_ref01"
+          }
+        }
+      ]
+    }
+  ],
+  "key$": "BasicDroomVanDeDagFlow"
+}

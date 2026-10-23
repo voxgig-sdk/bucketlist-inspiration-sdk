@@ -1,0 +1,116 @@
+# Entity: droom_van_de_dag
+
+main: kit: entity: droom_van_de_dag: {
+
+  alias: field: {}
+
+  fields: {
+    attribution: {
+      h: "Attribution"
+      n: "attribution"
+      r: true
+      t: "`$OBJECT`"
+    }
+    date: {
+      fo: "date"
+      h: "Date"
+      n: "date"
+      r: true
+      t: "`$STRING`"
+    }
+    dream: {
+      h: "Dream"
+      n: "dream"
+      r: true
+      t: "`$OBJECT`"
+    }
+    language: {
+      h: "Language"
+      n: "language"
+      r: true
+      t: "`$STRING`"
+    }
+    requestedTheme: {
+      h: "Requested Theme"
+      n: "requestedTheme"
+      r: true
+      t: [
+        "`$ONE`"
+        [
+          "`$STRING`"
+          "`$NULL`"
+        ]
+      ]
+    }
+    scope: {
+      h: "Scope"
+      n: "scope"
+      r: true
+      t: "`$STRING`"
+    }
+  }
+
+  name: "droom_van_de_dag"
+  op: {
+    load: {
+      name: "load"
+      points: [
+        {
+          co: {
+            id: "GET /api/droom-van-de-dag"
+            source: "openapi3"
+            version: 2
+          }
+          g: {
+            query: [
+              {
+                ex: "nl"
+                k: "query"
+                n: "lang"
+                or: "lang"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                ex: "nederland"
+                k: "query"
+                n: "scope"
+                or: "scope"
+                r: false
+                t: "`$STRING`"
+              }
+              {
+                k: "query"
+                n: "theme"
+                or: "theme"
+                r: false
+                t: "`$STRING`"
+              }
+            ]
+          }
+          m: "GET"
+          o: "/api/droom-van-de-dag"
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
+          s: [
+            {
+              lit: "api"
+            }
+            {
+              lit: "droom-van-de-dag"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}

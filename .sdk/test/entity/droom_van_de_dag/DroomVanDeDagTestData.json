@@ -1,0 +1,52 @@
+{
+  "existing": {
+    "droom_van_de_dag": {
+      "DROOM_VAN_DE_DAG00": {
+        "attribution": {},
+        "date": "s3d",
+        "dream": {},
+        "language": "s3f",
+        "requestedTheme": "s40",
+        "scope": "s41",
+        "id": "DROOM_VAN_DE_DAG00"
+      },
+      "DROOM_VAN_DE_DAG01": {
+        "attribution": {},
+        "date": "s79",
+        "dream": {},
+        "language": "s7b",
+        "requestedTheme": "s7c",
+        "scope": "s7d",
+        "id": "DROOM_VAN_DE_DAG01"
+      },
+      "DROOM_VAN_DE_DAG02": {
+        "attribution": {},
+        "date": "sb5",
+        "dream": {},
+        "language": "sb7",
+        "requestedTheme": "sb8",
+        "scope": "sb9",
+        "id": "DROOM_VAN_DE_DAG02"
+      }
+    }
+  },
+  "new": {
+    "droom_van_de_dag": {
+      "droom_van_de_dag_ref01": {
+        "attribution": {},
+        "date": "sf1",
+        "dream": {},
+        "language": "sf3",
+        "requestedTheme": "sf4",
+        "scope": "sf5"
+      }
+    }
+  },
+  "requests": {
+    "GET /api/droom-van-de-dag": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

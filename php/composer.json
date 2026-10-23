@@ -1,0 +1,29 @@
+{
+  "name": "voxgig-sdk/bucketlist-inspiration-sdk",
+  "description": "Unofficial generated PHP SDK for the Bucketlist.nl Dream of the Day public API. Not affiliated with or endorsed by the upstream API provider.",
+  "type": "library",
+  "keywords": ["voxgig", "sdk", "generated-sdk", "openapi", "api-client", "bucketlist-inspiration"],
+  "homepage": "https://github.com/voxgig-sdk/bucketlist-inspiration-sdk",
+  "license": "MIT",
+  "authors": [
+    { "name": "Voxgig", "homepage": "https://voxgig.com" }
+  ],
+  "support": {
+    "issues": "https://github.com/voxgig-sdk/bucketlist-inspiration-sdk/issues",
+    "source": "https://github.com/voxgig-sdk/bucketlist-inspiration-sdk"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "files": ["bucketlistinspiration_sdk.php"],
+    "classmap": ["core/", "entity/", "feature/", "types/", "utility/", "config.php", "schema.php", "features.php"]
+  },
+  "autoload-dev": {
+    "classmap": ["test/"]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files": [
+    "SUMMARY.md"
+  ],
+  "config": ".sdk/doc/qa/vale.ini",
+  "routes": {},
+  "quoted": {
+    "SUMMARY.md": [
+      "Returns one published Bucketlist.nl experience with its own image, canonical source URL and referral URL. The selection changes daily in the Europe/Amsterdam time zone.",
+      "The current dream and source attribution"
+    ]
+  }
+}

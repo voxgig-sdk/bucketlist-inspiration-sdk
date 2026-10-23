@@ -1,0 +1,27 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        email: "support@bucketlist.nl"
+        name: "Bucketlist.nl"
+        url: "https://bucketlist.nl/samenwerken?lang=en#droom-van-de-dag"
+      }
+      description: "Returns one published Bucketlist.nl experience with its own image, canonical source URL and referral URL. The selection changes daily in the Europe/Amsterdam time zone."
+      servers: [
+        {
+          url: "https://bucketlist.nl"
+        }
+      ]
+      summary: "Returns one published Bucketlist.nl experience with its own image, canonical source URL and referral URL."
+      termsOfService: "https://bucketlist.nl/algemene-voorwaarden"
+      title: "Bucketlist.nl Dream of the Day API"
+      version: "1.0.0"
+      website: "https://bucketlist.nl/samenwerken?lang=en#droom-van-de-dag"
+    }
+  }
+}
+

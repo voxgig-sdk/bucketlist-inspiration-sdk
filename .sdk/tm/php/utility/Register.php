@@ -1,0 +1,72 @@
+<?php
+declare(strict_types=1);
+
+// BucketlistInspiration SDK utility registration
+
+require_once __DIR__ . '/../core/UtilityType.php';
+require_once __DIR__ . '/Clean.php';
+require_once __DIR__ . '/Done.php';
+require_once __DIR__ . '/MakeError.php';
+require_once __DIR__ . '/FeatureAdd.php';
+require_once __DIR__ . '/FeatureHook.php';
+require_once __DIR__ . '/FeatureInit.php';
+require_once __DIR__ . '/Fetcher.php';
+require_once __DIR__ . '/MakeFetchDef.php';
+require_once __DIR__ . '/MakeContext.php';
+require_once __DIR__ . '/MakeOptions.php';
+require_once __DIR__ . '/MakeRequest.php';
+require_once __DIR__ . '/MakeResponse.php';
+require_once __DIR__ . '/MakeResult.php';
+require_once __DIR__ . '/MakePoint.php';
+require_once __DIR__ . '/MakeSpec.php';
+require_once __DIR__ . '/MakeUrl.php';
+require_once __DIR__ . '/Param.php';
+require_once __DIR__ . '/PrepareAuth.php';
+require_once __DIR__ . '/PrepareBody.php';
+require_once __DIR__ . '/Graphql.php';
+require_once __DIR__ . '/PrepareHeaders.php';
+require_once __DIR__ . '/PrepareMethod.php';
+require_once __DIR__ . '/PrepareParams.php';
+require_once __DIR__ . '/PreparePath.php';
+require_once __DIR__ . '/PrepareQuery.php';
+require_once __DIR__ . '/ResultBasic.php';
+require_once __DIR__ . '/ResultBody.php';
+require_once __DIR__ . '/ResultHeaders.php';
+require_once __DIR__ . '/TransformRequest.php';
+require_once __DIR__ . '/TransformResponse.php';
+
+BucketlistInspirationUtility::setRegistrar(function (BucketlistInspirationUtility $u): void {
+    $u->clean = [BucketlistInspirationClean::class, 'call'];
+    $u->clean_add = [BucketlistInspirationClean::class, 'add'];
+    $u->clean_explain = [BucketlistInspirationDone::class, 'clean_explain'];
+    $u->done = [BucketlistInspirationDone::class, 'call'];
+    $u->make_error = [BucketlistInspirationMakeError::class, 'call'];
+    $u->feature_add = [BucketlistInspirationFeatureAdd::class, 'call'];
+    $u->feature_hook = [BucketlistInspirationFeatureHook::class, 'call'];
+    $u->feature_init = [BucketlistInspirationFeatureInit::class, 'call'];
+    $u->fetcher = [BucketlistInspirationFetcher::class, 'call'];
+    $u->make_fetch_def = [BucketlistInspirationMakeFetchDef::class, 'call'];
+    $u->make_context = [BucketlistInspirationMakeContext::class, 'call'];
+    $u->make_options = [BucketlistInspirationMakeOptions::class, 'call'];
+    $u->make_request = [BucketlistInspirationMakeRequest::class, 'call'];
+    $u->make_response = [BucketlistInspirationMakeResponse::class, 'call'];
+    $u->make_result = [BucketlistInspirationMakeResult::class, 'call'];
+    $u->make_point = [BucketlistInspirationMakePoint::class, 'call'];
+    $u->make_spec = [BucketlistInspirationMakeSpec::class, 'call'];
+    $u->make_url = [BucketlistInspirationMakeUrl::class, 'call'];
+    $u->param = [BucketlistInspirationParam::class, 'call'];
+    $u->prepare_auth = [BucketlistInspirationPrepareAuth::class, 'call'];
+    $u->prepare_body = [BucketlistInspirationPrepareBody::class, 'call'];
+    $u->prepare_headers = [BucketlistInspirationPrepareHeaders::class, 'call'];
+    $u->prepare_method = [BucketlistInspirationPrepareMethod::class, 'call'];
+    $u->prepare_params = [BucketlistInspirationPrepareParams::class, 'call'];
+    $u->prepare_path = [BucketlistInspirationPreparePath::class, 'call'];
+    $u->prepare_query = [BucketlistInspirationPrepareQuery::class, 'call'];
+    $u->graphql_body = [BucketlistInspirationGraphql::class, 'body'];
+    $u->graphql_errors = [BucketlistInspirationGraphql::class, 'errors'];
+    $u->result_basic = [BucketlistInspirationResultBasic::class, 'call'];
+    $u->result_body = [BucketlistInspirationResultBody::class, 'call'];
+    $u->result_headers = [BucketlistInspirationResultHeaders::class, 'call'];
+    $u->transform_request = [BucketlistInspirationTransformRequest::class, 'call'];
+    $u->transform_response = [BucketlistInspirationTransformResponse::class, 'call'];
+});
